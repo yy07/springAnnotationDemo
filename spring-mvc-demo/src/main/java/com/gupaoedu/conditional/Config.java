@@ -23,8 +23,13 @@ public class Config {
     public People people(City city) {
         //这里如果city实体没有成功注入 这里就会报空指针
         city.setCityCode(301701);
-        return new People("小小", 3, city);
+        People people = new People();
+        people.setAge(31);
+        people.setCity(city);
+        people.setName("小小");
+        return people;
     }
+
     @Conditional(ConditionalDemo.class)
     @Bean("city2")
     public City city2() {

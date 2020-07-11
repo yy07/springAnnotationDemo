@@ -14,6 +14,7 @@ public class AnnotationTestDemo {
         for (String name : beanDefinitionNames){
             System.out.println(name);
         }
-
+        Object testUser = applicationContext.getBean("TestUser");
+        System.out.println(testUser.toString());
     }
 }

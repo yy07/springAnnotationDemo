@@ -26,4 +26,5 @@ public class People {
      *  城市信息
      */
     private City city;
+
 }

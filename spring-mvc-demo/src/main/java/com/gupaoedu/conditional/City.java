@@ -1,5 +1,6 @@
 package com.gupaoedu.conditional;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
