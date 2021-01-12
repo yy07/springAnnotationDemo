@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 /**
  * @Author:jinboxaing
@@ -14,13 +16,14 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
+@Repository
 public class City {
     /**
      * 城市名称
      */
-    private String cityName;
+    private String cityName="阿妹你看：圣地亚哥";
     /**
      * 城市code
      */
-    private Integer cityCode;
+    private Integer cityCode=1;
 }

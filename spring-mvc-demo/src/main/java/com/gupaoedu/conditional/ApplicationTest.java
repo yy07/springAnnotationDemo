@@ -12,8 +12,9 @@ public class ApplicationTest {
         AnnotationConfigApplicationContext applicationContext=new AnnotationConfigApplicationContext(Config.class);
         String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
         for (String name : beanDefinitionNames){
-            System.out.println(name);
+            System.out.println(name+":  "+applicationContext.getBean(name));
         }
-
+        Object serverImpl = applicationContext.getBean("serverImpl");
+        System.out.println(serverImpl);
     }
 }
