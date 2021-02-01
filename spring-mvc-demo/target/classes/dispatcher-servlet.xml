@@ -16,8 +16,8 @@
     <!-- 定义视图解析器 -->
     <bean id="velocityConfig"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/" />
-        <property name="suffix" value="*.jsp" />
+        <property name="prefix" value="/"/>
+        <property name="suffix" value="*.jsp"/>
     </bean>
 
 

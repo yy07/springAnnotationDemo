@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
  * @date:2020/7/8 16:07
  */
 @Configuration
-@Import({ImportTest.class,MyImportSelector.class,OutConfiguration.class})
+@Import({ImportTest.class, MyImportSelector.class, OutConfiguration.class})
 public class TestConfig {
 
 }

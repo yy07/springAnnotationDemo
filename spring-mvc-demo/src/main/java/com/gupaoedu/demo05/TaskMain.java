@@ -11,7 +11,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class TaskMain {
 
     public static void main(String[] args) {
-        ApplicationContext context=new FileSystemXmlApplicationContext("classpath:applicationContext.xml");
+        ApplicationContext context = new FileSystemXmlApplicationContext("classpath:applicationContext.xml");
 
     }
 }

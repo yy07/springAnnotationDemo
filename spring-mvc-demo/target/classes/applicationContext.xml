@@ -9,7 +9,7 @@
     http://www.springframework.org/schema/task/spring-task-3.2.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean name="helloService" class="com.gupaoedu.example.HelloService"/>
-    
+
     <context:component-scan base-package="com.gupaoedu.demo05"/>
 
     <task:annotation-driven scheduler="scheduler"/>

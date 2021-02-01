@@ -13,7 +13,7 @@ public class ImportConfiguration {
 
 
     @Bean
-    public ImportService importService(){
+    public ImportService importService() {
         return new ImportService();
     }
 }

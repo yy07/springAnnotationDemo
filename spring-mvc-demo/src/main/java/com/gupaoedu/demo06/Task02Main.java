@@ -11,7 +11,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  **/
 public class Task02Main {
     public static void main(String[] args) {
-        ApplicationContext applicationContext=new
+        ApplicationContext applicationContext = new
                 AnnotationConfigApplicationContext(TaskConfiguration.class);
     }
 }

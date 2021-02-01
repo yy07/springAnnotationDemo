@@ -8,10 +8,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class AnnotationTestDemo {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext applicationContext=new AnnotationConfigApplicationContext(TestConfig.class);  //这里的参数代表要做操作的类
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(TestConfig.class);  //这里的参数代表要做操作的类
 
         String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
-        for (String name : beanDefinitionNames){
+        for (String name : beanDefinitionNames) {
             System.out.println(name);
         }
         Object testUser = applicationContext.getBean("TestUser");

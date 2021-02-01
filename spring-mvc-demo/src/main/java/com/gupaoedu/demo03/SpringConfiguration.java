@@ -18,8 +18,8 @@ import org.springframework.context.annotation.Import;
 public class SpringConfiguration {
 
     @Bean
-    public Demo04Service demo04Service(Demo03Service demo03Service){
-        Demo04Service demo04Service=new Demo04Service();
+    public Demo04Service demo04Service(Demo03Service demo03Service) {
+        Demo04Service demo04Service = new Demo04Service();
         demo04Service.setDemo03Service(demo03Service);
         return demo04Service;
     }

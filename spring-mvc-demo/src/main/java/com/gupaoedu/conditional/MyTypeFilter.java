@@ -19,9 +19,9 @@ public class MyTypeFilter implements TypeFilter {
         ClassMetadata classMetadata = metadataReader.getClassMetadata();
         Resource resource = metadataReader.getResource();
         String className = classMetadata.getClassName();
-        System.out.println("--->"+className);
+        System.out.println("--->" + className);
         // 检测名字包含Service的bean
-        if(className.contains("Service")){
+        if (className.contains("Service")) {
             return true;
         }
         return false;

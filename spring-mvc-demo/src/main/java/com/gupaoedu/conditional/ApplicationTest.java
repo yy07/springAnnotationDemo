@@ -9,10 +9,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class ApplicationTest {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext applicationContext=new AnnotationConfigApplicationContext(Config.class);
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
         String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
-        for (String name : beanDefinitionNames){
-            System.out.println(name+":  "+applicationContext.getBean(name));
+        for (String name : beanDefinitionNames) {
+            System.out.println(name + ":  " + applicationContext.getBean(name));
         }
         Object serverImpl = applicationContext.getBean("serverImpl");
         System.out.println(serverImpl);

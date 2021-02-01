@@ -6,7 +6,6 @@ public class Student {
     protected String name;
 
 
-
     public Student(String name) {
         this.name = name;
     }
@@ -14,8 +13,6 @@ public class Student {
     public String getName() {
         return name;
     }
-
-
 
 
 }

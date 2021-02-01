@@ -13,7 +13,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Demo04Main {
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext=new
+        ApplicationContext applicationContext = new
                 AnnotationConfigApplicationContext(SpringConfiguration.class);
         System.out.println(applicationContext.getBean(ImportService.class));
     }

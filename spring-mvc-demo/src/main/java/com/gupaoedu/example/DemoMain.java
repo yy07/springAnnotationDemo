@@ -10,9 +10,9 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
  **/
 public class DemoMain {
     public static void main(String[] args) {
-        ApplicationContext context=new
+        ApplicationContext context = new
                 FileSystemXmlApplicationContext(
-                        "classpath:applicationContext.xml");
+                "classpath:applicationContext.xml");
         System.out.println(context.getBean(HelloService.class));
     }
 }

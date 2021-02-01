@@ -21,9 +21,9 @@ public class City {
     /**
      * 城市名称
      */
-    private String cityName="阿妹你看：圣地亚哥";
+    private String cityName = "阿妹你看：圣地亚哥";
     /**
      * 城市code
      */
-    private Integer cityCode=1;
+    private Integer cityCode = 1;
 }
